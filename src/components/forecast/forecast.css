@@ -4,7 +4,7 @@
 }
 
 .daily-item {
-  background-color: #f5f5f5;
+  background-color: #fffeb8;
   border-radius: 15px;
   height: 40px;
   margin: 5px;
@@ -55,9 +55,10 @@
 }
 
 .daily-details-grid-item label:first-child {
-  color: #757575;
+  color: #0077b6;
 }
 
 .daily-details-grid-item label:last-child {
-  color: #212121;
+  font-weight: 600;
+  color: #000000;
 }
