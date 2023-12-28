@@ -1,0 +1,73 @@
+https://rapidapi.com/wirefreethought/api/geodb-cities/
+
+https://home.openweathermap.org/api_keys
+
+https://www.npmjs.com/package/react-accessible-accordion
+
+npm i react-accessible-accordion
+
+https://www.npmjs.com/package/react-select-async-paginate
+
+npm i react-select-async-paginate
+
+        return {
+          options: result.data.map((city) => {
+            return {
+              value: `${city.latitude} ${city.longitude}`,
+              label: `${city.name} ${city.countryCode}`,
+            };
+          }),
+        };
+
+
+https://openweathermap.org/current
+
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+
+
+https://home.openweathermap.org/api_keys
+
+d56ebc3f37f6c0afc6a071754b7fa0f2
+
+
+
+5 days forecast 
+
+https://openweathermap.org/forecast5
+
+api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+
+-------------------------------------------------------------------------------------
+
+
+const text = "how are you?";
+const splitText = text.split(" ");
+
+splitText => ["how", "are" , "you"]
+
+const [val1, val2, val3] = text.split(" ");
+
+val1 => how
+val2 => are
+val3 => you?
+
+
+const [lat, lon] = searchData.value.split(" ");
+
+
+
+Promise.all([currentWeatherFetch, forecastFetch]); // order matters 
+// return fulfilled promise if all promises in [] are fulfilled 
+
+
+
+    const currentWeatherFetch = fetch(
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`
+    );
+
+want temperature in Celsius => add `units=metric` in url 
+
+    const currentWeatherFetch = fetch(
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
+    );
